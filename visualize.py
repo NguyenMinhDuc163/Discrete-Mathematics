@@ -58,14 +58,12 @@ with open('input.txt', 'r') as f:
                 if i in isolated:
                     isolated.remove(i)
                 if j in isolated:
-                    isolated.remove(j)
+                   isolated.remove(j)
 
     num_components = countConnectedComponents(G)
 
     if isolated:
         num_components += len(isolated)
-
-    print("Số thành phần liên thông là:", num_components)
 
     # Vẽ đồ thị
     gv = GraphVisualization()
