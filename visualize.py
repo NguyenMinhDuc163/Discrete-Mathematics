@@ -2,6 +2,10 @@ import math
 import networkx as nx
 import matplotlib.pyplot as plt
 
+# cài 2 thư viện này trước
+#pip install matplotlib
+#pip install networkx
+
 class GraphVisualization:
     def __init__(self):
         self.visual = []
